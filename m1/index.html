@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minikeyboard</title>
+  <style>
+    .screen{
+      width: 256px;
+      height: 128px;
+    }
+    .keyboardOuter {
+      width: 256px;
+      height: 256px;
+      border: 1px solid black;
+      overflow: hidden;
+      position: absolute;
+    }
+    .keyboardMenu {
+      display: block;
+      height: 256px;
+      width: 256px;
+    }
+    .keyboardC {
+      display: none;
+      height: 256px;
+      width: 1280px;
+    }
+    .keyboardV {
+      display: none;
+      height: 256px;
+      width: 384px;
+    }
+    button {
+      text-align: center;
+      width: 128px;
+      height: 128px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      display: block;
+      float: left;
+      font-size: 18px;
+    }
+    button:hover {background-color: #A9A9A9}
+  </style>
+</head>
+
+<body>
+  <div class='screen'>
+    <p id='text_disp'><p>
+  </div>
+
+  <div class='keyboardOuter' id='keyboardOuter'>
+    <div class="keyboardMenu" id='keyboardMenu'>
+      <button id="Consonants" value='Consonants'>Consonants</button>
+      <button id="Vowels" value='Vowels'>Vowels</button>
+      <button id="Space" value='Space'>Space</button>
+      <button id="Delete" value='Delete'>Delete</button>
+    </div>
+    <div class='keyboardC', id='keyboardC'>
+      <button id="b">b</button>
+      <button id="d">d</button>
+      <button id="g">g</button>
+      <button id="j">j</button>
+      <button id="l">l</button>
+      <button id="n">n</button>
+      <button id="q">q</button>
+      <button id="s">s</button>
+      <button id="v">v</button>
+      <button id="x">x</button>
+      <button id="c">c</button>
+      <button id="f">f</button>
+      <button id="h">h</button>
+      <button id="k">k</button>
+      <button id="m">m</button>
+      <button id="p">p</button>
+      <button id="r">r</button>
+      <button id="t">t</button>
+      <button id="w">w</button>
+      <button id="z">z</button>
+    </div>
+    <div class='keyboardV' id=keyboardV>
+      <button id="a">a</button>
+      <button id="i">i</button>
+      <button id="u">u</button>
+      <button id="e">e</button>
+      <button id="o">o</button>
+      <button id="y">y</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+  <script>var text = "";</script>
+  <script src="/src/blackmagic.js"></script>
+</body>
+</html>
